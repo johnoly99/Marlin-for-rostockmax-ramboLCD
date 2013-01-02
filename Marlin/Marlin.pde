@@ -5,7 +5,7 @@
     ***********SeeMeCNC RostockMAX and LCD from reprapdiscount firmware*********
     
     
-    Testing RAMBo 1.1A board with A4982 1/16 microstepping drivers
+
     
     
     

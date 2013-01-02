@@ -228,7 +228,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 
 // default settings 
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {106.666, 106.666, 106.666, 584.0}  // 53.333(xyz)/292.0(E) for E for rostockmax with V1.0 RAMBo boards 1/8 stepping     106.666/584.0 for RAMBo 1.1A and later with 1/16 microstepping
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {53.333, 53.333, 53.333, 292.0}  // 53.333(xyz)/292.0(E) for E for rostockmax with V1.0 RAMBo boards 1/8 stepping     106.666/584.0 for RAMBo 1.1A and later with 1/16 microstepping
 #define DEFAULT_MAX_FEEDRATE          {200, 200, 200, 50}  // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {800, 800, 800, 1500}  // X, Y, Z, E maximum start speed for accelerated moves.
 
