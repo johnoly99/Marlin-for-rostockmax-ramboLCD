@@ -5,6 +5,10 @@
     ***********SeeMeCNC RostockMAX and LCD from reprapdiscount firmware*********
     
     
+    
+    ########################    1/16 stepping 1.1A   #######################
+    
+    
 
     
     

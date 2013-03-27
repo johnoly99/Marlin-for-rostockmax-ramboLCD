@@ -83,10 +83,10 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 275
-#define HEATER_1_MAXTEMP 275
-#define HEATER_2_MAXTEMP 275
-#define BED_MAXTEMP 140
+#define HEATER_0_MAXTEMP 260
+#define HEATER_1_MAXTEMP 260
+#define HEATER_2_MAXTEMP 260
+#define BED_MAXTEMP 125
 
 // If your bed has low resistance e.g. .6 ohm and throws the fuse you can duty cycle it to reduce the
 // average current. The value should be an integer and the heat bed will be turned on for 1 interval of
@@ -220,16 +220,18 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // For Rostock this means top and center of the cartesian print volume.
 #define X_HOME_POS 0
 #define Y_HOME_POS 0
-#define Z_HOME_POS 356.10 // Distance between nozzle and print surface after homing.
+#define Z_HOME_POS 368.14 // Distance between nozzle and print surface after homing.
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
-#define HOMING_FEEDRATE {800, 800, 800, 0}  // set the homing speeds (mm/min)
+#define HOMING_FEEDRATE {1500, 1500, 1500, 0}  // set the homing speeds (mm/min)
 
 // default settings 
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {53.333, 53.333, 53.333, 292.0}  // 53.333(xyz)/292.0(E) for E for rostockmax with V1.0 RAMBo boards 1/8 stepping     106.666/584.0 for RAMBo 1.1A and later with 1/16 microstepping
-#define DEFAULT_MAX_FEEDRATE          {200, 200, 200, 50}  // (mm/sec)
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {53.333, 53.333, 53.333, 292.0}  // default steps per unit for rostockmax with 15 tooth pulleys and 1/8 stepping ~ RAMBo 1.0 and older
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {106.666, 106.666, 106.666, 584.0}  // default steps per unit for rostockmax with 15 tooth pulleys and 1/16 stepping ~ RAMBo 1.1 and later
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.000, 80.000, 80.000, 584.0}  // default steps per unit for rostockmax with 20 tooth pulleys and 1/16 stepping ~ RAAMBo 1.1 and later
+#define DEFAULT_MAX_FEEDRATE          {400, 400, 400, 50}  // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {800, 800, 800, 1500}  // X, Y, Z, E maximum start speed for accelerated moves.
 
 #define DEFAULT_ACCELERATION          800   // X, Y, Z and E max acceleration in mm/s^2 for printing moves

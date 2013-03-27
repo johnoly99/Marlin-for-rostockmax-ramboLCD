@@ -22,7 +22,7 @@
 	#define MACHINE_NAME "Ultimaker"
 	#define FIRMWARE_URL "http://firmware.ultimaker.com"
 #else
-	#define MACHINE_NAME "RostockMAX"
+	#define MACHINE_NAME "Dreadnaught"
 	#define FIRMWARE_URL "https://github.com/johnoly99/Marlin-for-rostockmax-rambo"
 #endif
 
