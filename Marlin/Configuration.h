@@ -8,8 +8,8 @@
 //User specified version info of THIS file to display in [Pronterface, etc] terminal window during startup.
 //Implementation of an idea by Prof Braino to inform user that any changes made
 //to THIS file by the user have been successfully uploaded into firmware.
-#define STRING_VERSION_CONFIG_H "2012-11-28" //Personal revision number for changes to THIS file.
-#define STRING_CONFIG_H_AUTHOR "johnoly99 email:seemecnc@gmail.com" //Who made the changes.
+#define STRING_VERSION_CONFIG_H "2012-04-09" //Personal revision number for changes to THIS file.
+#define STRING_CONFIG_H_AUTHOR "johnoly99 email:john@seemecnc.com" //Who made the changes.
 
 // This determines the communication speed of the printer
 #define BAUDRATE 250000
@@ -220,7 +220,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // For Rostock this means top and center of the cartesian print volume.
 #define X_HOME_POS 0
 #define Y_HOME_POS 0
-#define Z_HOME_POS 368.14 // Distance between nozzle and print surface after homing.
+#define Z_HOME_POS 365.00 // Distance between nozzle and print surface after homing.
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
@@ -229,17 +229,17 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // default settings 
 
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {53.333, 53.333, 53.333, 292.0}  // default steps per unit for rostockmax with 15 tooth pulleys and 1/8 stepping ~ RAMBo 1.0 and older
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {106.666, 106.666, 106.666, 584.0}  // default steps per unit for rostockmax with 15 tooth pulleys and 1/16 stepping ~ RAMBo 1.1 and later
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.000, 80.000, 80.000, 584.0}  // default steps per unit for rostockmax with 20 tooth pulleys and 1/16 stepping ~ RAAMBo 1.1 and later
-#define DEFAULT_MAX_FEEDRATE          {400, 400, 400, 50}  // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {800, 800, 800, 1500}  // X, Y, Z, E maximum start speed for accelerated moves.
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {106.666, 106.666, 106.666, 584.0}  // default steps per unit for rostockmax with 15 tooth pulleys and 1/16 stepping ~ RAMBo 1.1 and later
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.000, 80.000, 80.000, 584.0}  // default steps per unit for rostockmax with 20 tooth pulleys and 1/16 stepping ~ RAAMBo 1.1 and later
+#define DEFAULT_MAX_FEEDRATE          {200, 200, 200, 50}  // (mm/sec)
+#define DEFAULT_MAX_ACCELERATION      {1200, 1200, 1200, 1500}  // X, Y, Z, E maximum start speed for accelerated moves.
 
 #define DEFAULT_ACCELERATION          800   // X, Y, Z and E max acceleration in mm/s^2 for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  1500   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
 
 // 
-#define DEFAULT_XYJERK                30.0   // (mm/sec)
-#define DEFAULT_ZJERK                 30.0   // (mm/sec)
+#define DEFAULT_XYJERK                27.0   // (mm/sec)
+#define DEFAULT_ZJERK                 27.0   // (mm/sec)
 #define DEFAULT_EJERK                 25.0   // (mm/sec)
 
 //===========================================================================
@@ -279,11 +279,11 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
   #define LCD_HEIGHT 4
   
 // Preheat Constants
-  #define PLA_PREHEAT_HOTEND_TEMP 170 
+  #define PLA_PREHEAT_HOTEND_TEMP 150 
   #define PLA_PREHEAT_HPB_TEMP 50
   #define PLA_PREHEAT_FAN_SPEED 255		// Insert Value between 0 and 255
 
-  #define ABS_PREHEAT_HOTEND_TEMP 230
+  #define ABS_PREHEAT_HOTEND_TEMP 200
   #define ABS_PREHEAT_HPB_TEMP 50
   #define ABS_PREHEAT_FAN_SPEED 255		// Insert Value between 0 and 255
 

@@ -4,21 +4,20 @@ THIS IS BASED ON RELEASE CANDIDATE 2 FOR MARLIN 1.0.0
 
 by seemecnc
 
+UPDATES:
+
+4/9/2013		Added define for 20 tooth GT2 pulleys
+
+
+
 ***This firmware is modified for use with Rostock MAX and IS SET UP FOR THE REPRAPDISCOUNT LCD SMART CONTROLLER***
-
-It is a combination of 
-
-https://github.com/jcrocholl/Marlin
-https://github.com/tonokip/Marlin
-
-and other tweaks/changes 
 
 
 TO UPLOAD THIS FIRMWARE TO YOUR RAMBO, YOU MUST FIRST FOLLOW THE INSTRUCTIONS ON 
 
 http://reprap.org/wiki/RamboLCD
 
-You ahve to have the modified Arduino PINS file in your arduino software to support using all the extra pins needed that are on the RAMBo board
+You have to have the modified Arduino_pins.c file in your arduino software to support using all the extra pins needed that are on the RAMBo board
 
 
 

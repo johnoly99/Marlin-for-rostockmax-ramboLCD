@@ -22,8 +22,8 @@
 	#define MACHINE_NAME "Ultimaker"
 	#define FIRMWARE_URL "http://firmware.ultimaker.com"
 #else
-	#define MACHINE_NAME "Dreadnaught"
-	#define FIRMWARE_URL "https://github.com/johnoly99/Marlin-for-rostockmax-rambo"
+	#define MACHINE_NAME "RostockMAX"
+	#define FIRMWARE_URL "https://github.com/johnoly99/Marlin-for-rostockmax-ramboLCD"
 #endif
 
 #define STRINGIFY_(n) #n
@@ -127,8 +127,8 @@
 	#define MSG_WATCHDOG_RESET " Watchdog Reset"
 	#define MSG_SOFTWARE_RESET " Software Reset"
 	#define MSG_MARLIN "Marlin "
-	#define MSG_AUTHOR " | Author: "
-	#define MSG_CONFIGURATION_VER " Last Updated: "
+	#define MSG_AUTHOR " | Author:SeeMeCNC "
+	#define MSG_CONFIGURATION_VER " Last Updated:2012-04-09"
 	#define MSG_FREE_MEMORY " Free Memory: "
 	#define MSG_PLANNER_BUFFER_BYTES "  PlannerBufferBytes: "
 	#define MSG_OK "ok"
